@@ -1,0 +1,86 @@
+<! doctype html>
+<head>
+	<title>Practice</title>
+	<style type="text/css">
+		body {background-color:pink;
+				background-image: url(ice2.jpg);
+				background-size:cover;
+			}
+		@keyframes example{
+			from{color:green;
+				}
+			to{
+				color:blue;
+			}
+		}
+		
+		h1 {color:brown;
+			font-family:arial;
+			text-align:center;
+			text-decoration: underline;
+			animation-name: example;
+			animation-duration: 0.5s;
+			animation-iteration-count: infinite;
+		}
+		p {color:blue;
+			line-height:190%;
+			font-style:italic;
+			font-weight:bold;
+			font-size : 25px;
+			}
+		#one {
+			position:absolute;
+			top:10%;
+			left:18%;
+			font-size: 20px;
+		}
+		#two {
+			position: absolute;
+			top:10%;
+			left:230%;
+			font-size: 20px;
+		} 
+		#three{
+			text-align: right;
+		}
+		a:hover{
+			color:white;
+			text-decoration: underline;
+		}
+
+
+	</style>
+</head>
+<body>
+<h1>REGISTER HERE!</h1>
+<div id="three"><a href="index2.html">Login page</a></div>
+<div id="one">
+	<form name="Data">
+		Username:<input type="text" name="username" value="Enter name Here" maxlength=15 /><br /><br>
+		Email::----<input type="text" name="email" value="Enter email Here" maxlength=15 /><br /><br>
+		Password:<input type ="password" name="password" maxlength="15" /><br /><br>
+		Male: <input type="radio" name="gender" value="male" />
+		Female: <input type="radio" name="gender" value="female" />
+		Other: <input type="radio" name="gender" value="other" />
+		<br/>
+		<p> Select the given courses</p>
+		Maths:<input type="checkbox" name="sub1" value="maths" />
+		Physics:<input type="checkbox" name="sub" value="physics" />
+		English:<input type="checkbox" name="sub" value="english" />
+		Chemistry:<input type="checkbox" name="sub" value="chemistry" />
+		<p>State:</p>
+		<select>
+			<option>Uttarpradesh</option>
+			<option>Uttarakhand</option>
+			<option>Assam</option>
+			<option>Odissa</option>
+			<option>Kerala</option>
+		
+		</select>
+		<div id="two"><p>Remark:</p>
+		<textarea name="remark:">
+		</textarea><br/>
+		<input type="button" value="REGISTER" onclick=""/></div>
+	</form>
+</div>
+</body>

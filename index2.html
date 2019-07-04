@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web</title>
+	<style type ="text/css">
+		body{	
+				background-image: url(bike.jpg);
+				background-size: cover; 
+			 }
+		@keyframes example{
+			from{font-size: 60px;
+					color:white;
+				}
+			to{font-size: 120px;
+				color:red;
+			}
+		}
+		h1{
+			text-align: center;
+			font-size: 60px;
+			color:white;
+			animation-name: example;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+		}
+		form{
+			color:white;
+		}
+		#two {position:absolute;
+			left:96%;
+		}
+		#one{
+			position:absolute;
+			top:40%;
+			left:43%;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="two">
+		<nav>
+			<a href="practice.html">Sign up</a>
+		</nav>
+	</div>
+	<h1>Login</h1>
+	<div id="one">
+		<form method="GET" action="csstricks.html">
+		Username:<input type="text" name="username" required /><br>
+		Email:-----<input type="email" name="email" required /><br>
+		Password:<input type="password" name="password" required /><br><br>
+		<input type="submit" value="Login"/>
+		</form>
+</body>
+</html>
